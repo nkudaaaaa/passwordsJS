@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page">
+        <h1>Создайте уникальный пароль здесь.</h1>
+        <span id="tip">Созданный пароль:</span>
+
+        <div class="main">
+            <div id="field">
+                <span id="password-field" title="нажмите, чтобы скопировать"></span>
+            </div>
+            <div class="input">
+                <label for="points">Выберите количество символов:</label><br><br>
+                <input type="range" id="points" name="points" min="10" max="30" value="15">
+                <output for="points">15</output><br>
+                <button onclick="password(document.getElementById('points').value)" id="but">Сгенерировать</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
